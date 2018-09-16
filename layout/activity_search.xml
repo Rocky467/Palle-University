@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Search by name or mobile"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="99dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <Button
+        android:onClick="nameGo"
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/buttonback"
+        android:text="Go" />
+
+    <Button
+        android:onClick="numberGo"
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/buttonback"
+        android:text="Go" />
+</RelativeLayout>
